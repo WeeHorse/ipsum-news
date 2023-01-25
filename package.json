@@ -1,0 +1,28 @@
+{
+  "name": "Ipsum News",
+  "version": "1.0.0",
+  "description": "News for the wicked",
+  "main": "main.js",
+  "scripts": {
+    "cy:open": "cypress open --browser chrome",
+    "cy:run": "cypress run --browser chrome"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^12.2.0",
+    "@cypress/webpack-preprocessor": "^5.12.2",
+    "cypress": "^10.7.0"
+  },
+  "cypress-cucumber-preprocessor":
+  {
+    "json": {
+      "enabled": true
+    },
+    "stepDefinitions": [
+      "/specs/step_definitions/*.js"
+    ]
+  }
+}
